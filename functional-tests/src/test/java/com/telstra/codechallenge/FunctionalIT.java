@@ -18,4 +18,10 @@ public class FunctionalIT {
     return Karate.run("quotes").relativeTo(getClass());
   }
 
+  //Test method for given exercise.
+  @Karate.Test
+  Karate testRepos() {
+    return Karate.run("repos").relativeTo(getClass());
+  }
+
 }

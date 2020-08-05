@@ -10,9 +10,9 @@ Feature: As an api user I want to retrieve some spring boot quotes
     Then status 200
     And match header Content-Type contains 'application/json'
     # see https://github.com/intuit/karate#schema-validation
-    And match response == 
+    And match response ==
     """
-    { 
+    {
       type : 'success',
       value : {
         id : '#number',
